@@ -40,7 +40,7 @@ atm = {
       console.log("Invalid Pin");
     }
   },
-  widthraw(pin, num) {
+  withdraw(pin, num) {
     if (pin !== undefined && pin !== '' && pin.toString() === this.pin) {
       if (isNaN(num) || num === '') {
         console.log("Error: Please Input a Number");
@@ -52,7 +52,7 @@ atm = {
         }
         else {
           this.bal = this.bal - num;
-          console.log("Amount widthrawn: " + num);
+          console.log("Amount withdrawn: " + num);
           this.balance(pin.toString());
         }
       }
